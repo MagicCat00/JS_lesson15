@@ -1,25 +1,27 @@
 'use strict'
 
-const man = {
-    hands: 2,
-    lags: 2,
-    eyes: 2,
-    walk: function () {
-        console.log('Я хожу');
+const worker = {
+    workplace: 1,
+    dinner: 1,
+    goToWork: function () {
+        console.log('Иду на работу');
     },
-    talk: function () {
-        console.log('Я говорю');
+    leaveWork: function () {
+        console.log('Ухожу с работы');
+    },
+    work: function () {
+        console.log('Работаю');
     }
 }
 
-const newMan = Object.create(man)
-const newWoman = Object.create(man)
+const frontEndDev = Object.create(worker)
+const backEndDev = Object.create(worker)
 
-newMan.name = 'Ivan'
-newMan.age = 23
+frontEndDev.role = 'Front End Developer'
+backEndDev.role = 'Back End Developer'
 
-newWoman.name = 'Anna'
-newWoman.age = 22
+frontEndDev.work()
+backEndDev.work()
 
-console.log(newMan);
-console.log(newWoman);
+console.log(frontEndDev);
+console.log(backEndDev);
