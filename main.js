@@ -11,6 +11,9 @@ const worker = {
     },
     work: function () {
         console.log('Работаю');
+    },
+    sayHello: function () {
+        console.log('Привет, меня зовут ' + this.name);
     }
 }
 
@@ -28,8 +31,17 @@ frontEndDev.work = function () {
     console.log('Мучаюсь с Бд');
 }
 
-frontEndDev.work()
-backEndDev.work()
+const developer1 = Object.create(frontEndDev)
+const developer2 = Object.create(frontEndDev)
+const developer3 = Object.create(backEndDev)
+const developer4 = Object.create(backEndDev)
 
-console.log(frontEndDev);
-console.log(backEndDev);
+developer1.name = 'Alex'
+developer2.name = 'Ivan'
+developer3.name = 'Anna'
+developer4.name = 'Elena'
+
+developer1.sayHello()
+developer2.sayHello()
+developer3.sayHello()
+developer4.sayHello()
