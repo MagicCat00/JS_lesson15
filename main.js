@@ -43,7 +43,4 @@ developer2.name = 'Ivan'
 developer3.name = 'Anna'
 developer4.name = 'Elena'
 
-console.log(developer1.dinner);
-console.log(developer2.dinner);
-console.log(developer3.dinner);
-console.log(developer4.dinner);
+console.log(frontEndDev.isPrototypeOf(developer3));
