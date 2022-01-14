@@ -20,6 +20,14 @@ const backEndDev = Object.create(worker)
 frontEndDev.role = 'Front End Developer'
 backEndDev.role = 'Back End Developer'
 
+frontEndDev.work = function () {
+    console.log('Пишу фронт, ем печеньки');
+}
+
+frontEndDev.work = function () {
+    console.log('Мучаюсь с Бд');
+}
+
 frontEndDev.work()
 backEndDev.work()
 
