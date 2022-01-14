@@ -20,6 +20,8 @@ const worker = {
 const frontEndDev = Object.create(worker)
 const backEndDev = Object.create(worker)
 
+frontEndDev.dinner = 2
+
 frontEndDev.role = 'Front End Developer'
 backEndDev.role = 'Back End Developer'
 
@@ -41,7 +43,7 @@ developer2.name = 'Ivan'
 developer3.name = 'Anna'
 developer4.name = 'Elena'
 
-developer1.sayHello()
-developer2.sayHello()
-developer3.sayHello()
-developer4.sayHello()
+console.log(developer1.dinner);
+console.log(developer2.dinner);
+console.log(developer3.dinner);
+console.log(developer4.dinner);
