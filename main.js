@@ -3,7 +3,7 @@
 const Person = function (name) {
     this.name = name
 }
-//конструктор, с большой буквы
+//конструктор, с большой буквы, всегда вызывается через оператор new
 
 const person1 = new Person('Vlad')
 const person2 = new Person('Alex')
